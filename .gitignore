@@ -1,0 +1,4 @@
+/output
+.vscode
+**/__pycache__
+test.json

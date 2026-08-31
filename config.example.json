@@ -1,0 +1,53 @@
+{
+    "input": "rainbow-star.png",
+    "output_dir": "output",
+    "fps": 12,
+    "gif_length": 4.0,
+    "seed": 42,
+    "overlap": "stack",
+    "effects": [
+        {
+            "effect": "rgbShift",
+            "params": {
+                "rgbRedX": 10,
+                "rgbRedY": 5,
+                "rgbGreenX": -10,
+                "rgbGreenY": -5,
+                "rgbBlueX": 5,
+                "rgbBlueY": 0
+            },
+            "start": 0.0,
+            "end": 2.0,
+            "ramp": "constant"
+        },
+        {
+            "effect": "noise",
+            "params": {
+                "amount": 60,
+                "scale": 5
+            },
+            "start": 1.0,
+            "end": 4.0,
+            "ramp": "ascend"
+        },
+        {
+            "effect": "scanLines",
+            "params": {
+                "lines": 40,
+                "opacity": 70
+            },
+            "start": 1.0,
+            "end": 4.0,
+            "ramp": "peak"
+        },
+        {
+            "effect": "invert",
+            "params": {
+                "invert": true
+            },
+            "start": 3.0,
+            "end": 3.5,
+            "ramp": "constant"
+        }
+    ]
+}
